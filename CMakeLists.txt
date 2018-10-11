@@ -3,4 +3,4 @@ project(COMP_3512_lab4)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(COMP_3512_lab4 main.cpp)
+add_executable(COMP_3512_lab4 main.cpp Animal.cpp Animal.hpp)
