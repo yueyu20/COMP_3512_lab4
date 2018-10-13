@@ -14,11 +14,17 @@ class Animal {
 private:
     int age;
     bool isAlive;
-    static long Id;
-    int xCor;
-    int yCor;
+    double xCor;
+    double yCor;
+    long Id;
+
+
 
 public:
+
+    static long count;
+
+
     Animal();
 
     Animal(double x, double y, int age);
@@ -27,13 +33,36 @@ public:
 
     virtual ~Animal();
 
-    virtual void moves(double x, double y);
+    virtual void move(double x, double y);
+
+    virtual void move(double x, double y, double z);
 
     virtual void sleep();
 
     virtual void eat();
 
     friend ostream& operator<< (ostream& os, const Animal& animal);
+
+
+    void setId(long n);
+
+    long getId() const;
+
+    void setAge(int n);
+
+    long getAge() const;
+
+    void setAlive(bool t);
+
+    bool getAlive() const;
+
+    void setX(double x);
+
+    void setY(double y);
+
+    double getX() const;
+
+    double getY() const;
 
 };
 
