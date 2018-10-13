@@ -8,7 +8,7 @@ int main() {
 
     Animal *a, *b, *c;
     a = new Animal();
-    b = new Bird(2, 3, 3, 3);
+    b = new Bird(2, 3, 3, 0);
     c = new Canine(10, 5, 5);
 
     cout << endl;
