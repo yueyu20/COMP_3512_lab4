@@ -13,6 +13,7 @@ Animal::Animal() {
     age = 0;
     xCor = 0;
     yCor = 0;
+    cout<< "animal default constructor" << endl;
 }
 Animal::Animal(double x, double y, int age) {
     age = age;
