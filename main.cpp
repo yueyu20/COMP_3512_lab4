@@ -40,9 +40,9 @@ int main() {
     b->sleep();
     c->sleep();
 
-    dynamic_cast<anine *>(c)->hunt();
+    dynamic_cast<Canine *>(c)->hunt();
 
     return 0;
-C
+
 
 }
